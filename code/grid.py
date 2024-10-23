@@ -13,9 +13,9 @@ dropout = [0.1, 0.2]
 permute = True
 
 if permute:
-    output_dir = "grid_search_permute"
+    output_dir = f"grid_search_{split}_permute"
 else:
-    output_dir = "grid_search"
+    output_dir = f"grid_search_{split}"
 
 split_folder = os.path.join(os.getcwd(), "../split_metadata")
 
