@@ -7,6 +7,12 @@
 4. Create a micromamba environment: `micromamba env create -n gene-embed -f env.yaml`. If you do not have micromamba set up, refer to [this guide](https://mamba.readthedocs.io/en/latest/user_guide/micromamba.html).
 5. Activate the environment `micromamba activate gene-embed` and install mkl: `pip install mkl==2022.1.0`
 
+## Download existing experiments
+0. `cd gene-embed/code`
+1. Download gene_embed_experiment_runs.zip from Zenodo ([link here](https://zenodo.org/records/13984543?preview=1&token=eyJhbGciOiJIUzUxMiJ9.eyJpZCI6IjcwYTE4MTJhLWI5MmMtNGY1NC04NDRmLWVmMTE4N2QwMWQ5MSIsImRhdGEiOnt9LCJyYW5kb20iOiJhOTJlNTE4OWRiODkzMWU4YTQwM2E1OTRhZmVlY2Q1NyJ9.1Hnpvme5b_5w648fX8VHMvZnkopmqhnvXPWhuTcmEPGYhIIGRxI7FpS9tNkMM020Imqo-7KTxO9L-znI2G10nQ)).
+2. Unzip the folder to obtain `gene_embed_experiment_runs`.
+3. Move the sub-folders into `gene-embed/code`: `mv gene_embed_experiment_runs/* gene-embed/code`
+
 ## Running experiments
 0. `cd gene-embed/code` and activate the environment `micromamba activate gene-embed`.
 1. Create a grid search by editing `grid.py` (edit the search space and `output_dir` folder path).
