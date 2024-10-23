@@ -13,4 +13,4 @@
 2. Create config files by running `python grid.py`. `output_dir` should contain sub-folders for each config now.
 3. Launch the experiments: `bash run.sh output_dir`.
 4. All experiment results and the trained model weights will be stored under `output_dir` (see test_scores.json, model.pt etc.)
-5. Set Find the best model on the valudation set by running `python find_best_val.py`. Remember to set the correct output directory.
+5. Set Find the best model on the validation set by running `python find_best_val.py`. This will display the test set performance of the best val model under each experiment. Edit `source_folders` in this file to obtain results on additional experiments.
