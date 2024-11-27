@@ -1,3 +1,6 @@
 code/grid_search_*
 code/files_for_images/*
 code/__pycache__/*
+*.pyc
+.venv
+.vscode

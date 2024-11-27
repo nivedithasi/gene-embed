@@ -1,0 +1,16 @@
+name: gene-embed
+channels:
+  - conda-forge
+  - pytorch
+  - defaults
+dependencies:
+  - python=3.10
+  # - cudatoolkit=11.6
+  - lightgbm=3.3.2
+  - pandas=1.4.2
+  - parallel
+  - pytorch=1.12.0
+  - scikit-learn=1.1.1
+  - scipy=1.8.1
+  - seaborn=0.11.2
+  - tqdm
